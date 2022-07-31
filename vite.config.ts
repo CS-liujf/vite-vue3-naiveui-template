@@ -5,6 +5,7 @@ import {NaiveUiResolver} from 'unplugin-vue-components/resolvers'
 import {createSvgIconsPlugin} from 'vite-plugin-svg-icons'
 import {createHtmlPlugin} from 'vite-plugin-html'
 import {visualizer} from 'rollup-plugin-visualizer'
+// import legacy from '@vitejs/plugin-legacy'
 import {resolve} from 'path'
 
 function pathResolve(dir: string): string {
@@ -29,7 +30,10 @@ export default ({mode}) => {
       }),
       visualizer({
         filename: 'dist/analysis.html',
-      })
+      }),
+      // legacy({
+      //   targets: 'ie>=11'
+      // })
     ],
     resolve: {
       alias: [{find: '@', replacement: pathResolve('src')}]
