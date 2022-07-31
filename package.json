@@ -1,0 +1,27 @@
+{
+  "name": "vite-vue3-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "naive-ui": "^2.32.0",
+    "vfonts": "^0.0.3",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.0",
+    "rollup-plugin-visualizer": "^5.7.1",
+    "typescript": "^4.6.4",
+    "unplugin-vue-components": "^0.21.2",
+    "vite": "^3.0.0",
+    "vite-plugin-html": "^3.2.0",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vue-tsc": "^0.38.4"
+  }
+}
