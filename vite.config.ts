@@ -7,6 +7,9 @@ import { createHtmlPlugin } from 'vite-plugin-html'
 import { visualizer } from 'rollup-plugin-visualizer'
 import path from 'node:path'
 
+//启用tsx
+import vueJsx from '@vitejs/plugin-vue-jsx';
+
 // 路径工具
 const pathResolve = (dir: string) => path.resolve(process.cwd(), dir)
 
@@ -17,6 +20,7 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [
       vue(),
+      vueJsx(),
 
       // 自动按需引入naiveui组件
       Components({
