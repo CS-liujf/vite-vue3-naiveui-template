@@ -12,7 +12,7 @@ import {computed} from 'vue'
 interface Props {
   name: string
   color?: string
-  size?: string
+  size?: string | number
   depth?: 1 | 2 | 3 | 4 | 5
 }
 
