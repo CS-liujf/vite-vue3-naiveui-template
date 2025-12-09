@@ -1,7 +1,5 @@
 /// <reference types="vite/client" />
 
-/// <reference types="vite/client" />
-
 // ----------- 全局 window 扩展 -----------
 import type {
   MessageProviderInst,
